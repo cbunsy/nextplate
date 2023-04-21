@@ -34,8 +34,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 Here are the list of features/technologies to be used:
 
-- [ ] Eslint & Prettier Configuration for NextJS
-- [ ] Husky & Linted-Staged Configuration for NextJS
+- [x] Eslint & Prettier Configuration for NextJS
+- [x] Husky & Linted-Staged Configuration for NextJS
 - [ ] Authentication with [NextAuth.js](https://next-auth.js.org/)
 - [ ] ORM using [Prisma](https://www.prisma.io/)
 - [x] Styled using [Tailwind CSS](https://tailwindcss.com/)
