@@ -35,9 +35,10 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 Here are the list of features/technologies to be used:
 
 - [ ] Eslint & Prettier Configuration for NextJS
+- [ ] Husky & Linted-Staged Configuration for NextJS
 - [ ] Authentication with [NextAuth.js](https://next-auth.js.org/)
 - [ ] ORM using [Prisma](https://www.prisma.io/)
-- [ ] Styled using [Tailwind CSS](https://tailwindcss.com/)
+- [x] Styled using [Tailwind CSS](https://tailwindcss.com/)
 - [ ] UI Components built using [Radix UI](https://www.radix-ui.com/)
 - [ ] Validations using [Zod](https://github.com/colinhacks/zod)
 - [ ] Form using [React Hook Form](https://react-hook-form.com/)
