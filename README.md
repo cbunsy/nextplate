@@ -36,6 +36,7 @@ Here are the list of features/technologies to be used:
 
 - [x] Eslint & Prettier Configuration for NextJS
 - [x] Husky & Linted-Staged Configuration for NextJS
+- [x] Git committing with [Commitizen](https://commitizen-tools.github.io/commitizen/)
 - [ ] Authentication with [NextAuth.js](https://next-auth.js.org/)
 - [ ] ORM using [Prisma](https://www.prisma.io/)
 - [x] Styled using [Tailwind CSS](https://tailwindcss.com/)
@@ -43,6 +44,22 @@ Here are the list of features/technologies to be used:
 - [ ] Validations using [Zod](https://github.com/colinhacks/zod)
 - [ ] Form using [React Hook Form](https://react-hook-form.com/)
 - [x] Written in Typescript
+
+## Git Commit
+
+You can use usual commit functionality or use `commitizen`.
+
+1. Install Commitizen globally
+
+```bash
+$ pnpm add install commitizen -g
+```
+
+2. Commit your changes
+
+```bash
+$ cz
+```
 
 ## Deploy on Vercel
 
