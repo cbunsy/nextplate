@@ -14,15 +14,15 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code>
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none p-4">
-          <Avatar.Root className="inline-flex items-center justify-center align-middle overflow-hidden select-none w-16 h-16 rounded-full">
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white p-4 dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+          <Avatar.Root className="inline-flex h-16 w-16 select-none items-center justify-center overflow-hidden rounded-full align-middle">
             <Avatar.Image
-              className="w-full h-full object-cover"
+              className="h-full w-full object-cover"
               src="/assets/images/profile-image.jpeg"
               alt="Lorem Ipsum"
             />
             <Avatar.Fallback
-              className="w-full h-full flex items-center justify-center bg-white text-purple-500 text-lg font-bold"
+              className="flex h-full w-full items-center justify-center bg-white text-lg font-bold text-purple-500"
               delayMs={600}
             >
               LI
