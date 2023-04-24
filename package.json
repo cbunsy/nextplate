@@ -10,6 +10,8 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "@radix-ui/primitive": "^1.0.0",
+    "@radix-ui/react-avatar": "^1.0.2",
     "@types/node": "18.15.13",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
