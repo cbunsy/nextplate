@@ -41,7 +41,7 @@ Here are the list of features/technologies to be used:
 - [x] ORM using [Prisma](https://www.prisma.io/)
 - [x] Database using [Supabase](https://supabase.com/)
 - [x] Styled using [Tailwind CSS](https://tailwindcss.com/)
-- [ ] UI Components built using [Radix UI](https://www.radix-ui.com/)
+- [x] UI Components built using [Radix UI](https://www.radix-ui.com/)
 - [ ] Validations using [Zod](https://github.com/colinhacks/zod)
 - [ ] Form using [React Hook Form](https://react-hook-form.com/)
 - [x] Written in Typescript
