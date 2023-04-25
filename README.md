@@ -40,7 +40,7 @@ Here are the list of features/technologies to be used:
 - [ ] Authentication with [NextAuth.js](https://next-auth.js.org/)
 - [ ] ORM using [Prisma](https://www.prisma.io/)
 - [x] Styled using [Tailwind CSS](https://tailwindcss.com/)
-- [ ] UI Components built using [Radix UI](https://www.radix-ui.com/)
+- [x] UI Components built using [Radix UI](https://www.radix-ui.com/)
 - [ ] Validations using [Zod](https://github.com/colinhacks/zod)
 - [ ] Form using [React Hook Form](https://react-hook-form.com/)
 - [x] Written in Typescript
