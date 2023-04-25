@@ -64,13 +64,13 @@ cz
 
 ## Working with Prisma
 
-- Prototyping and synchronizing a development database:
+- Update db with prototyping and synchronizing a development database:
 
 ```bash
 pnpm db:push
 ```
 
-- Syncing, Keeping track of the changes, and Maintaining data in database:
+- Update db with syncing, keeping track of the changes, and maintaining data in database:
 
 ```bash
 pnpm migrate:dev
