@@ -38,7 +38,8 @@ Here are the list of features/technologies to be used:
 - [x] Husky & Linted-Staged Configuration for NextJS
 - [x] Git committing with [Commitizen](https://commitizen-tools.github.io/commitizen/)
 - [ ] Authentication with [NextAuth.js](https://next-auth.js.org/)
-- [ ] ORM using [Prisma](https://www.prisma.io/)
+- [x] ORM using [Prisma](https://www.prisma.io/)
+- [x] Database using [Supabase](https://supabase.com/)
 - [x] Styled using [Tailwind CSS](https://tailwindcss.com/)
 - [ ] UI Components built using [Radix UI](https://www.radix-ui.com/)
 - [ ] Validations using [Zod](https://github.com/colinhacks/zod)
@@ -59,6 +60,32 @@ $ pnpm add install commitizen -g
 
 ```bash
 $ cz
+```
+
+## Working with Prisma
+
+- Prototyping and synchronizing a development database:
+
+```bash
+$ pnpm db:push
+```
+
+- Syncing, Keeping track of the changes, and Maintaining data in database:
+
+```bash
+$ pnpm migrate:dev
+```
+
+- Generate types with prisma:
+
+```bash
+$ npx prisma generate
+```
+
+- Seed database using `seed.ts`:
+
+```bash
+$ npx prisma db seed
 ```
 
 ## Deploy on Vercel
