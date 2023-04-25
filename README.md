@@ -7,19 +7,19 @@ I am making this project to make a modern templates that will serve as the basic
 1. Install dependencies using pnpm:
 
 ```bash
-$ pnpm install
+pnpm install
 ```
 
 2. Copy `.env.example` to `.env.local` and update the variables
 
 ```bash
-$ cp .env.example .env.local
+cp .env.example .env.local
 ```
 
 3. Run the development server:
 
 ```bash
-$ pnpm dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -53,13 +53,13 @@ You can use usual commit functionality or use `commitizen`.
 1. Install Commitizen globally
 
 ```bash
-$ pnpm add install commitizen -g
+pnpm add install commitizen -g
 ```
 
 2. Commit your changes
 
 ```bash
-$ cz
+cz
 ```
 
 ## Working with Prisma
@@ -67,25 +67,25 @@ $ cz
 - Prototyping and synchronizing a development database:
 
 ```bash
-$ pnpm db:push
+pnpm db:push
 ```
 
 - Syncing, Keeping track of the changes, and Maintaining data in database:
 
 ```bash
-$ pnpm migrate:dev
+pnpm migrate:dev
 ```
 
 - Generate types with prisma:
 
 ```bash
-$ npx prisma generate
+npx prisma generate
 ```
 
 - Seed database using `seed.ts`:
 
 ```bash
-$ npx prisma db seed
+npx prisma db seed
 ```
 
 ## Deploy on Vercel
