@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  maildev:
+    image: maildev/maildev
+    ports:
+      - '1081:1080'

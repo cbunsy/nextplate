@@ -69,5 +69,7 @@ module.exports = {
     ],
     'no-nested-ternary': 'off',
     'import/prefer-default-export': 'off',
+    'react/prop-types': 'off',
+    'react/require-default-props': 'off',
   },
 };
