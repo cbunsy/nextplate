@@ -71,5 +71,19 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
+
+    // Learn more: https://github.com/airbnb/javascript/issues/2500#issuecomment-1197665962
+    'no-restricted-exports': [
+      'error',
+      {
+        restrictedNamedExports: ['then'],
+      },
+    ],
+
+    // Learn more: https://stackoverflow.com/questions/44939304/eslint-should-be-listed-in-the-projects-dependencies-not-devdependencies
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+
+    // Learn more: https://stackoverflow.com/questions/37487007/eslint-es6-redux-global-required-unexpected-require#:~:text=Add%20a%20comment-,24,You%20can%20disable%20it%20in%20your%20.eslintrc%20file.,-%7B%0A%20%20%20rules%3A%20%7B
+    'global-require': 0,
   },
 };

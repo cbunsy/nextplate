@@ -67,13 +67,13 @@ cz
 - Update db with prototyping and synchronizing a development database:
 
 ```bash
-pnpm db:push
+pnpm prisma:db:push
 ```
 
 - Update db with syncing, keeping track of the changes, and maintaining data in database:
 
 ```bash
-pnpm migrate:dev
+pnpm prisma:migrate:dev
 ```
 
 - Generate types with prisma:
@@ -88,8 +88,24 @@ npx prisma generate
 npx prisma db seed
 ```
 
+- Open prisma studio:
+
+```bash
+pnpm prisma:studio
+```
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Issues while development
+
+### Ports Deprecation
+
+Sometimes, the application used port 3000 and then 3001 without killing the processes that use them. Thus, in order to kill the processes, you can use the following command:
+
+```bash
+sudo kill -9 $(lsof -ti:3000,3001)
+```

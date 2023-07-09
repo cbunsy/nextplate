@@ -1,13 +1,11 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable global-require */
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/app/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
     container: {
@@ -54,8 +52,8 @@ module.exports = {
         },
       },
       borderRadius: {
-        lg: `var(--radius)`,
-        md: `calc(var(--radius) - 2px)`,
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
       keyframes: {
@@ -75,7 +73,10 @@ module.exports = {
     },
   },
   plugins: [
+    // Learn more: https://stackoverflow.com/questions/37487007/eslint-es6-redux-global-required-unexpected-require
+    /* eslint-disable global-require */
     require('tailwindcss-debug-screens'),
     require('tailwindcss-animate'),
+    /* eslint-enable global-require */
   ],
 };
