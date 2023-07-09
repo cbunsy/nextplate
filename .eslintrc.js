@@ -86,4 +86,32 @@ module.exports = {
     // Learn more: https://stackoverflow.com/questions/37487007/eslint-es6-redux-global-required-unexpected-require#:~:text=Add%20a%20comment-,24,You%20can%20disable%20it%20in%20your%20.eslintrc%20file.,-%7B%0A%20%20%20rules%3A%20%7B
     'global-require': 0,
   },
+  overrides: [
+    {
+      files: ['**/*.js', '**/*.ts', '**/*.tsx'],
+      rules: {
+        'simple-import-sort/imports': [
+          'error',
+          {
+            groups: [
+              // `react` first, `next` second, then packages starting with a character
+              ['^react$', '^next', '^[a-z]'],
+              // Packages starting with `@`
+              ['^@'],
+              // Packages starting with `~`
+              ['^~'],
+              // Imports starting with `../`
+              ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+              // Imports starting with `./`
+              ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+              // Style imports
+              ['^.+\\.s?css$'],
+              // Side effect imports
+              ['^\\u0000'],
+            ],
+          },
+        ],
+      },
+    },
+  ],
 };
